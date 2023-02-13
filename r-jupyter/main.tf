@@ -96,7 +96,7 @@ resource "docker_container" "workspace" {
   shm_size = 512
   # users home directory
   volumes {
-    container_path = "/home/jovyan/work"
+    container_path = "/home/melashri/work"
     volume_name    = docker_volume.home_volume.name
     read_only      = false
   }
